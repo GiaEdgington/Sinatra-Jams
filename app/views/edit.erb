@@ -1,0 +1,26 @@
+<h1 style="font-family:Helvetica;color:orange">Editing <% @artist.name %> </h1>
+<hr>
+
+<form method="POST" action="/artists/<%= @artist.id %>">
+    <input type="hidden" name="_method" value="PUT">
+    <ul style="list-style:none;font-size:2em;line-height:2.3em;">
+        <li >
+            <label for="artist_name">Name</label>
+            <input type="text" name= "artist[name]" id="artist_name" value="<%= @artist.name %>">
+        </li>
+
+        <li>
+            <label for="artist_age">Age</label>
+            <input type="number" name="artist[age]" id="artist_age" value="<%= @artist.age %>">
+        </li>
+
+        <li>
+            <label for="artist_bio">Bio</label>
+            <input type="text" name="artist[bio]" id="artist_bio" value="<%= @artist.bio %>">
+        </li>
+
+        <li>
+            <input type="submit" value="Edit Artist">
+        </li>
+    </ul> 
+</form>

@@ -1,0 +1,13 @@
+<h1 style="font-family:Helvetica;color:orange">Hello! Here are all of our artists!</h1>
+
+<hr>
+
+<ul style="list-style:none;line-height:2.5em;">
+  <% @artists.each do |artist| %>
+    <li style="font-size:1.3em;">
+      <a style="text-decoration:none;color:gray;font-family:arial" href='<%= "/artists/#{artist.id}" %>' >
+        <%= artist.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,25 @@
+<h1 style="font-family:Helvetica;color:orange">New Artist</h1>
+<hr>
+
+<form method="POST" action="/artists">
+    <ul style="list-style:none;font-size:2em;line-height:2.3em;">
+        <li >
+            <label for="artist_name">Name</label>
+            <input type="text" name="name" id="artist_name">
+        </li>
+
+        <li>
+            <label for="artist_age">Age</label>
+            <input type="number" name="age" id="artist_age">
+        </li>
+
+        <li>
+            <label for="artist_bio">Bio</label>
+            <input type="text" name="bio" id="artist_bio">
+        </li>
+
+        <li>
+            <input type="submit" value="Log New Artist">
+        </li>
+    </ul> 
+</form>
